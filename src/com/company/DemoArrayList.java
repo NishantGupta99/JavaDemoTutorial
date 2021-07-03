@@ -30,5 +30,16 @@ public class DemoArrayList {
         Roll.add("R1920723"); // an string value
         System.out.println(Roll);
 
+        // creating an array list of lists
+
+        List<List<Integer>> marks = new ArrayList<>();
+        marks.add(Arrays.asList(78,45,78,15,97,21));//added the marks as an list of arrays
+        marks.add(Arrays.asList(48,14,25,96,78,45));
+        marks.add(Arrays.asList(87,54,78,86,75,84));
+
+        System.out.println(marks);
+
+
+
     }
 }
