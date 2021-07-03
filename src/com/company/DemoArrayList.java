@@ -39,6 +39,22 @@ public class DemoArrayList {
 
         System.out.println(marks);
 
+        // adding two arrays using add all
+
+        List<Integer> list1 = new ArrayList<>(); //created the first list in which i am going to add the second list
+        list1.add(43);
+        list1.add(32);
+        list1.add(76);
+
+        List<Integer> list2 = new ArrayList<>(); // the second list
+        list2.add(52);
+
+        list1.addAll(list2); // using add all to add the elements of list 2into list 1
+
+        System.out.println(list1);
+
+
+
 
 
     }
