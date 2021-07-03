@@ -13,5 +13,14 @@ public class DemoArrayList {
         System.out.println(names);
         System.out.println(name);
 
+        ArrayList<String> students = new ArrayList<>(); // array list to add elements one by one
+
+//1. Add elements one by one
+        students.add("alex");
+        students.add("brian");
+        students.add("charles");
+
+        System.out.println(students);
+
     }
 }
