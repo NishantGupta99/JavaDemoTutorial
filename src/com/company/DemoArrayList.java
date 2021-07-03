@@ -22,5 +22,13 @@ public class DemoArrayList {
 
         System.out.println(students);
 
+        // now lets create an array with no data type
+
+        ArrayList Roll = new ArrayList();
+
+        Roll.add(4); // an int value
+        Roll.add("R1920723"); // an string value
+        System.out.println(Roll);
+
     }
 }
