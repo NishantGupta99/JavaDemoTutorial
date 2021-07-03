@@ -8,10 +8,10 @@ public class DemoArrayList {
         List<String> name = List.of("patrick", "steward"); // array list created using a List.of method
         List<Integer> ages =List.of(44,55,34,56,33,11,33,54,23,6,76,23); // disadvantage of this is no value can be added afterwords
 
-        System.out.println(age);
-        System.out.println(ages);
-        System.out.println(names);
-        System.out.println(name);
+        //System.out.println(age);
+        //System.out.println(ages);
+        //System.out.println(names);
+        //System.out.println(name);
 
         ArrayList<String> students = new ArrayList<>(); // array list to add elements one by one
 
@@ -20,7 +20,7 @@ public class DemoArrayList {
         students.add("brian");
         students.add("charles");
 
-        System.out.println(students);
+        //System.out.println(students);
 
         // now lets create an array with no data type
 
@@ -28,7 +28,7 @@ public class DemoArrayList {
 
         Roll.add(4); // an int value
         Roll.add("R1920723"); // an string value
-        System.out.println(Roll);
+        //System.out.println(Roll);
 
         // creating an array list of lists
 
@@ -37,7 +37,7 @@ public class DemoArrayList {
         marks.add(Arrays.asList(48,14,25,96,78,45));
         marks.add(Arrays.asList(87,54,78,86,75,84));
 
-        System.out.println(marks);
+        //System.out.println(marks);
 
         // adding two arrays using add all
 
@@ -49,9 +49,28 @@ public class DemoArrayList {
         List<Integer> list2 = new ArrayList<>(); // the second list
         list2.add(52);
 
-        list1.addAll(list2); // using add all to add the elements of list 2into list 1
+        list1.addAll(list2); // using add all to add the elements of list into list 1
 
-        System.out.println(list1);
+        //System.out.println(list1);
+
+        // cloning one array list into another array
+
+        ArrayList<String> foods = new ArrayList<>();
+
+        foods.add("chicken");
+        foods.add("cheese");
+        foods.add("pasta");
+
+        ArrayList<String> menu = (ArrayList<String>) foods.clone();
+
+        //System.out.println(menu);
+
+        //
+
+
+
+
+
 
 
 
