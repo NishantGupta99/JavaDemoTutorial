@@ -55,8 +55,17 @@ public class sorting {
         Student_Details.put(96,"Anushtup");
         Student_Details.put(42,"Sameer");
         Student_Details.put(51,"Shamun");
-        TreeMap<Integer,String> Treemap = new TreeMap<>(Student_Details); // sorted the map and stored it in a variable named Treemap using this method
-                System.out.println(Treemap);
+       /* TreeMap<Integer,String> Treemap = new TreeMap<>(Student_Details); // sorted the map and stored it in a variable named Treemap using this method
+                System.out.println(Treemap);*/
+
+        //sorting the same map with respect to value
+
+        LinkedHashMap<Integer,String> Sorted_Students = new LinkedHashMap<>();
+
+        Student_Details.entrySet()
+                .stream()
+                .sorted(Map.Entry.comparingByValue());
+                 //.forEachOrdered(.forEachOrdered(x -> sortedMap.put(x.getKey(), x.getValue()));)
 
 
 
