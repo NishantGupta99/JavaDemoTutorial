@@ -1,7 +1,7 @@
 package com.company;
 import java.util.*;
 
-public class Arrays {
+public class Arraysdemo {
     public static void main(String[] args) {
         Integer[] marks = new Integer[5]; // intialization , declaration of array
 
