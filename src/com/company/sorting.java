@@ -37,13 +37,31 @@ public class sorting {
         //Sort list using Collections.sort() API.
         //Convert list back to set.
 
-        HashSet<Integer> numbersSet= new LinkedHashSet<Integer>(Arrays.asList(78,54,65,85,21,265,259,457,856,123,548,698,697,412,577,32));
+       /* HashSet<Integer> numbersSet= new LinkedHashSet<Integer>(Arrays.asList(78,54,65,85,21,265,259,457,856,123,548,698,697,412,577,32));
         List<Integer> numberList = new ArrayList<>(numbersSet);// converting a set into a list
 
         Collections.sort(numbersList);
        numbersSet = new LinkedHashSet<>(numbersList); // converting a list back to set
 
-        System.out.println(numbersSet);
+        System.out.println(numbersSet); */
+
+
+        // sorting of a map..... A map is the collection of key-value pairs. So map can be sorted in two ways i.e. sort by key or sort by value.
+
+        // sort by key
+        HashMap<Integer,String> Student_Details = new HashMap<>(); // created a map
+        Student_Details.put(18,"Nishant");
+        Student_Details.put(25,"Rohan");
+        Student_Details.put(96,"Anushtup");
+        Student_Details.put(42,"Sameer");
+        Student_Details.put(51,"Shamun");
+        TreeMap<Integer,String> Treemap = new TreeMap<>(Student_Details); // sorted the map and stored it in a variable named Treemap using this method
+                System.out.println(Treemap);
+
+
+
+
+
 
 
 
