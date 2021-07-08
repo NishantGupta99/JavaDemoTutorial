@@ -15,7 +15,14 @@ public class sorting {
         // now lets try to sort the array into decending order
 
 
-        Arrays.sort(numbers, Collections.reverseOrder()); // we are revesing the collections
+        //Arrays.sort(numbers, Collections.reverseOrder()); // we are revesing the collections
+
+
+        //sorting the following array withing a range
+
+        Arrays.sort(numbers, 2,4); // this command will sort the integers only within the index range
+
+
 
 
         System.out.println(Arrays.toString(numbers)); // to print the array in the form of a string
