@@ -1,6 +1,9 @@
 package com.company;
 import java.util.Arrays;
 import java.util.Collections; // to use the decending order
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.HashSet;
 
 public class sorting {
     public static void main(String[] args) {
@@ -20,12 +23,22 @@ public class sorting {
 
         //sorting the following array withing a range
 
-        Arrays.sort(numbers, 2,4); // this command will sort the integers only within the index range
+       // Arrays.sort(numbers, 2,4); // this command will sort the integers only within the index range
+        List<Integer> numbersList = Arrays.asList(numbers);
+
+//Sort the list
+        Collections.sort(numbersList);
+
+//Print list to confirm
+        //System.out.println(numbersList);
+
+        //System.out.println(Arrays.toString(numbers)); // to print the array
+
+        HashSet<Integer> numbersHashSet = new LinkedHashSet<>(
+                Arrays.asList(15, 11, 9, 55, 47, 18, 1123, 520, 366, 420) );
 
 
 
-
-        System.out.println(Arrays.toString(numbers)); // to print the array in the form of a string
 
 
 
