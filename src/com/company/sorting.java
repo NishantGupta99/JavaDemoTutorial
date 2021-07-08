@@ -1,8 +1,5 @@
 package com.company;
-import java.util.Arrays;
-import java.util.Collections; // to use the decending order
-import java.util.LinkedHashSet;
-import java.util.List;
+import java.util.*;
 import java.util.HashSet;
 
 public class sorting {
@@ -27,15 +24,28 @@ public class sorting {
         List<Integer> numbersList = Arrays.asList(numbers);
 
 //Sort the list
-        Collections.sort(numbersList);
+       // Collections.sort(numbersList);
 
 //Print list to confirm
         //System.out.println(numbersList);
 
         //System.out.println(Arrays.toString(numbers)); // to print the array
 
-        HashSet<Integer> numbersHashSet = new LinkedHashSet<>(
-                Arrays.asList(15, 11, 9, 55, 47, 18, 1123, 520, 366, 420) );
+        // sorting of a set There is no direct support for sorting the sets in Java. To sort a set, follow these steps:
+        //
+        //Convert set to list.
+        //Sort list using Collections.sort() API.
+        //Convert list back to set.
+
+        HashSet<Integer> numbersSet= new LinkedHashSet<Integer>(Arrays.asList(78,54,65,85,21,265,259,457,856,123,548,698,697,412,577,32));
+        List<Integer> numberList = new ArrayList<>(numbersSet);// converting a set into a list
+
+        Collections.sort(numbersList);
+       numbersSet = new LinkedHashSet<>(numbersList); // converting a list back to set
+
+        System.out.println(numbersSet);
+
+
 
 
 
