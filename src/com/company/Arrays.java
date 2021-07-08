@@ -10,5 +10,7 @@ public class Arrays {
         marks[2]=23;
         marks[3]=45;
         marks[4]=57;
+
+        System.out.println(marks[2]); // printing one element of the particular index
     }
 }

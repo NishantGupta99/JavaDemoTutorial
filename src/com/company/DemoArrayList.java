@@ -4,8 +4,8 @@ import java.util.HashMap;
 
 public class DemoArrayList {
     public static void main(String[] args) {
-        ArrayList<String> names = new ArrayList<String>(Arrays.asList("Nishant ", "Ram", "sam")); // array list with string created by a single line
-        ArrayList<Integer> age = new ArrayList<Integer>(Arrays.asList(22, 45, 33, 23, 54)); // array list for integer created using new array list
+       // ArrayList<String> names = new ArrayList<String>(Arrays.asList("Nishant ", "Ram", "sam")); // array list with string created by a single line
+        //ArrayList<Integer> age = new ArrayList<Integer>(Arrays.asList(22, 45, 33, 23, 54)); // array list for integer created using new array list
         List<String> name = List.of("patrick", "steward"); // array list created using a List.of method
         List<Integer> ages = List.of(44, 55, 34, 56, 33, 11, 33, 54, 23, 6, 76, 23); // disadvantage of this is no value can be added afterwords
 
@@ -34,9 +34,9 @@ public class DemoArrayList {
         // creating an array list of lists
 
         List<List<Integer>> marks = new ArrayList<>();
-        marks.add(Arrays.asList(78, 45, 78, 15, 97, 21));//added the marks as an list of arrays
-        marks.add(Arrays.asList(48, 14, 25, 96, 78, 45));
-        marks.add(Arrays.asList(87, 54, 78, 86, 75, 84));
+       // marks.add(Arrays.asList(78, 45, 78, 15, 97, 21));//added the marks as an list of arrays
+        //marks.add(Arrays.asList(48, 14, 25, 96, 78, 45));
+        //marks.add(Arrays.asList(87, 54, 78, 86, 75, 84)); // ask the problem with aslist with to uncle
 
         //System.out.println(marks);
 
@@ -69,13 +69,11 @@ public class DemoArrayList {
         //using hash sets for the first time
         HashMap<String, Integer> DataBase = new HashMap<>();
 
-        DataBase.put("Nishant", 99); // unline array here put is used instead of add
+        DataBase.put("Nishant", 99);
         DataBase.put("Pratirath", 100);
 
-        //System.out.println(DataBase); // will print the entire database
-        //System.out.println((DataBase.size())); // will print the size of the data base
-
-
+        System.out.println(DataBase); // will print the entire database
+        System.out.println((DataBase.size())); // will print the size of the data base
 
 
     }
